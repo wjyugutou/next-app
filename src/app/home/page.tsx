@@ -1,18 +1,18 @@
 'use client'
 
 import type { NextPage } from 'next'
-import { type ReactNode, useEffect } from 'react'
+import type { ReactNode } from 'react'
 
 interface Props {
   children?: ReactNode
 }
 
-const Home: NextPage<Props> = (props, initProps) => {
+const Home: NextPage<Props> = (props) => {
   useEffect(() => {
-    console.log({ props, initProps })
+    console.log({ props })
   }, [])
 
-  return <h1>Home</h1>
+  return <h1 className="text-red" >Home</h1>
 }
 
 export default Home

@@ -1,2 +1,26 @@
-@import '@unocss/reset/tailwind.css';
+@import url('@unocss/reset/tailwind.css');
+
 @unocss all;
+
+/* Color Mode transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+}
+
+::view-transition-old(root) {
+  z-index: 9999999;
+}
+
+html.dark::view-transition-old(root) {
+  z-index: 1;
+}
+
+html.dark::view-transition-new(root) {
+  z-index: 9999999;
+}

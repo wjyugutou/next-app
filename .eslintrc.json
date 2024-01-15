@@ -1,6 +1,7 @@
 {
   "extends": ["@antfu/eslint-config-react", "next/core-web-vitals"],
   "rules": {
-    "react/jsx-no-undef": "off"
+    "react/jsx-no-undef": "off",
+    "no-console": "off"
   }
 }

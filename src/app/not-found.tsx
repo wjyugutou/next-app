@@ -6,7 +6,7 @@ interface Props {
   children?: ReactNode
 }
 
-const NotFind: NextPage<Props> = (props, initProps) => {
+const NotFind: NextPage<Props> = (props) => {
   return <>
     <h1>NotFind</h1>
     <Link href="/">返回首页</Link>
