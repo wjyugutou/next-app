@@ -15,13 +15,20 @@
   },
   "devDependencies": {
     "@antfu/eslint-config-react": "^0.43.1",
+    "@iconify-json/material-symbols": "^1.1.70",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@unocss/postcss": "^0.58.3",
     "@unocss/webpack": "^0.58.3",
+    "@yugutou/stylelint-config": "^1.1.6",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.33",
+    "stylelint": "^16.1.0",
     "typescript": "^5",
-    "unocss": "^0.58.3"
+    "unocss": "^0.58.3",
+    "unplugin-auto-import": "^0.17.3"
   }
 }

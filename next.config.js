@@ -1,4 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const AutoImport = require('unplugin-auto-import/webpack').default
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+module.exports = {
+  webpack(config) {
+    config.plugins.push(
+      AutoImport({
+        dirs: ['./src/components'],
+        dts: true,
+      }),
+    )
+    return config
+  },
+}
