@@ -6,13 +6,14 @@ interface Props {
   children?: ReactNode
 }
 
-const App: NextPage<Props> = (props) => {
+function App(props: Props) {
   return <>
-  <div className={'flex gap-110px'}>
-    <Link href={'/home'}>Home</Link>
+    <div className={'flex gap-110px'}>
+      <Link href={'/home'} className="capitalize">home</Link>
+      <Link href={'/about'} className="capitalize">about</Link>
 
-  </div>
-</>
+    </div>
+  </>
 }
 
 export default App

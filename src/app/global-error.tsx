@@ -10,8 +10,8 @@ interface Props {
 
 const ErrorPage: NextPage<Props> = (props, initProps) => {
   return <>
-    <h1>Error</h1>
-    <Link href="/">返回首页</Link>
+    <h1>Global Error</h1>
+    <Link href="/" replace>返回首页</Link>
   </>
 }
 
